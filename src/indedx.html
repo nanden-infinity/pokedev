@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Intalação do Tailwindcss</title>
+  </head>
+
+  <body>
+    <div class="mx-auto app">
+      <header class="bg-header--color w-full text-white">
+        <div
+          class="container flex items-center mx-auto px-4 p-4 pb-4 max-w-[1200px]"
+        >
+          <div class="logo font-semibold">POKEDEV</div>
+          <nav class="nav--bar flex items-center mx-auto">
+            <ul class="list--menu flex items-center space-x-4">
+              <li class=""><a href="#home">Inicio</a></li>
+              <li><a href="#about">Esquilos</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+
+          <div class="autenticacao *:p-2 *:rounded-md space-x-2">
+            <button
+              class="btn--login bg-[#fcfcfc] text-slate-900 font-bold p-4"
+            >
+              Entrar
+            </button>
+            <button
+              class="btn--registrar border border-white p-4 text-whiite font-bold"
+            >
+              Resgistra-se
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero--section container mx-auto py-8">
+          <div class="text--content max-w-2xl">
+            <h1 class="text-4xl font-bold">POKEDEV</h1>
+            <p class="font-sans text-2xl">
+              A sua loja online de produtos Pokémon está aqui!
+            </p>
+            <p>
+              os nossos produtos são de marca e de qualidade ofrece a garantia e
+              acessibilidades para todos!
+            </p>
+            <p>reembolso até 100% se não estiver satisfeito o produto</p>
+            <a
+              href="#"
+              class="comprar--prod bg-header--color text-white font-sans p-2 px-6 border-2 rounded-md border-header--color inline-block"
+              >Adira o Pokédev</a
+            >
+            <a
+              href="#"
+              class="border-2 border-header--color p-2 px-4 inline-block rounded-md font-sans font-bold text-header--color ml-3 my-2"
+              >Saiba mais</a
+            >
+            <p>
+              junta-te a nós
+              <span class="font-bold text-header--color/90"
+                ><a
+                  href="https://www.pokemoncenter.com/en-gb/category/figures-and-pins"
+                  target="_self"
+                  >seja um afiliado</a
+                ></span
+              >
+            </p>
+          </div>
+        </section>
+        <section class="produtos--mais--vendidos mx-auto container mt-8">
+          <header class="flex bg-header--color px-4 p-1 text-white">
+            <nav class="flex justify-center mx-auto">
+              <ul class="flex space-x-2 items-center justify-center">
+                <li><a href="#" class="p-4 inline-block">Pokédev</a></li>
+                <li><a href="#" class="p-4 inline-block">Pikachu</a></li>
+                <li><a href="#" class="p-4 inline-block">Charmander</a></li>
+                <li><a href="#" class="p-4 inline-block">Bulbasaur</a></li>
+                <li><a href="#" class="p-4 inline-block">Squirtle</a></li>
+                <li><a href="#" class="p-4 inline-block">Eevee</a></li>
+                <li><a href="#" class="p-4 inline-block">Jigglypuff</a></li>
+              </ul>
+              <div class="flex items-center ml-4">
+                <input
+                  type="search"
+                  name="search--bar-menu"
+                  class="search p-2 outline-[.4px] outline-sky-800/10 w-[200px] bg-slate-200/20 rounded-md placeholder-white/70 text-white"
+                  placeholder="Buscar Pokemon"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 cursor-pointer ml-2 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </div>
+            </nav>
+          </header>
+        </section>
+        <section class="card--container">
+          <div class="container"></div>
+        </section>
+      </main>
+      <footer class="bg-header--color static bottom-0 left-0 right-0 mt-36">
+        <div class="container max-auto p-8 text-center text-white">
+          <p>&copy; 2040 PokéDev. Todos os direitos reservados.</p>
+          <p>Pokemon 2030</p>
+        </div>
+      </footer>
+    </div>
+    <div
+      class="overlay hidden fixed inset-0 bg-header--color bg-opacity-80 -z-2"
+    ></div>
+  
+    <div class="modal--container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
